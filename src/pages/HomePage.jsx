@@ -21,6 +21,7 @@ export const HomePage = () => {
   const countries = useSelector(state => countriesFilteredSelector(state, {countryToSearch, filter}))
 
   useEffect(() => {
+      console.log('loading')
       if (countries.length === 0) {
           dispatch(asyncCountries())
       }

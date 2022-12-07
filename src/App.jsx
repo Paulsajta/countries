@@ -8,12 +8,12 @@ import { Details } from './pages/Details';
 import { NotFound } from './pages/NotFound';
 
 function App() {
-    const location = useLocation()
+
   return (
     <>
       <Header />
       <Main>
-        <Routes location={location} key={location.pathname}>
+        <Routes>
           <Route exact path="/" element={
             <HomePage />
           } />
